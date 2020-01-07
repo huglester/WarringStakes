@@ -145,7 +145,7 @@ sudo docker pull dfinlab/meter-all-in-one:latest
 4. Force Resync block history and remove unused BLS keys (Recommended)
 ```
 sudo rm -rf /home/ubuntu/meter-data/instance-9eeef4f05bf08063
-sudo rm -rf consensus.key
+sudo rm -f /home/ubuntu/meter-data/consensus.key
 ```
 
 5. Start the container and mount the host data backup folder to the pos folder inside the container -v /home/ubuntu/meter-data:/pos
